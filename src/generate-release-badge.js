@@ -28,6 +28,7 @@ async function run() {
     console.log(`${lineTotal}: ${lineCoverage} : ${lineCoverageFormatted}`);
 
     const badgeUrl = generateBadge(badgeText, lineCoverageFormatted);
+    console.log(`Badge URL: ${badgeUrl}`);
     await downloadBadge(badgeUrl, ".github/badges/jacoco.svg");
     core.setOutput("coverage", lineCoverageFormatted);
   } catch (error) {
