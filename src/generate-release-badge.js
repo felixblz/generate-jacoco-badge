@@ -37,7 +37,8 @@ async function run() {
 
 function generateBadge(string, coverage) {
   const color = coverage >= 80 ? "green" : coverage >= 50 ? "yellow" : "red";
-  return `https://img.shields.io/badge/${string}-${coverage}%25-${color}.svg`;
+  //return `https://img.shields.io/badge/${string}-${coverage}%25-${color}.svg`;
+  return `https://img.shields.io/static/v1?label=${string}&message=${coverage}%25&color=${color}`;
 }
 
 async function downloadBadge(url, filePath) {
