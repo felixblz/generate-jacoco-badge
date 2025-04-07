@@ -1,0 +1,30 @@
+{
+  "name": "generate-jacoco-badge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Generate a badge from a Jacoco report",
+  "main": "dist/index.js",
+  "scripts": {
+    "prettier": "npx prettier . --write",
+    "prettier:check": "npx prettier . --check",
+    "build": "npm run prettier && ncc build src/main.js --license licenses.txt",
+    "precommit": "npm run build && git add dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixblz/generate-jacoco-badge"
+  },
+  "author": "felixblz",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "axios": "^1.8.4",
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3",
+    "prettier": "^3.5.3"
+  }
+}

@@ -1,0 +1,24 @@
+name: "Generate Jacoco-Badge"
+description: "Generate a Jacoco badge for your project"
+author: "felixblz"
+inputs:
+  github-token:
+    description: "GitHub Token"
+    required: false
+    default: "${{ github.token }}"
+  xml-path:
+    description: "Path to the Jacoco XML report file"
+    required: true
+  badge-text:
+    description: "Text to display on the badge"
+    required: false
+    default: "Coverage"
+outputs:
+  coverage:
+    description: "Test Coverage in percentage"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "package"
+  color: "gray-dark"
