@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd">
+<report name="Example Project">
+  <sessioninfo id="this" start="1234567890" dump="1234567890" />
+  <package name="com/example">
+    <class name="com/example/MyClass">
+      <method name="testMethod" desc="()V">
+        <counter type="INSTRUCTION" missed="5" covered="15" />
+        <counter type="BRANCH" missed="1" covered="3" />
+        <counter type="LINE" missed="2" covered="8" />
+        <counter type="COMPLEXITY" missed="1" covered="2" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <counter type="INSTRUCTION" missed="5" covered="15" />
+      <counter type="BRANCH" missed="1" covered="3" />
+      <counter type="LINE" missed="2" covered="8" />
+      <counter type="COMPLEXITY" missed="1" covered="2" />
+      <counter type="METHOD" missed="0" covered="1" />
+    </class>
+    <counter type="INSTRUCTION" missed="5" covered="15" />
+    <counter type="BRANCH" missed="1" covered="3" />
+    <counter type="LINE" missed="2" covered="8" />
+    <counter type="COMPLEXITY" missed="1" covered="2" />
+    <counter type="METHOD" missed="0" covered="1" />
+  </package>
+  <counter type="INSTRUCTION" missed="5" covered="15" />
+  <counter type="BRANCH" missed="1" covered="3" />
+  <counter type="LINE" missed="2" covered="8" />
+  <counter type="COMPLEXITY" missed="1" covered="2" />
+  <counter type="METHOD" missed="0" covered="1" />
+</report>

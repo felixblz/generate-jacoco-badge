@@ -17,7 +17,7 @@ outputs:
   coverage:
     description: "Test Coverage in percentage"
 runs:
-  using: "node20"
+  using: "node24"
   main: "dist/index.js"
 branding:
   icon: "package"

@@ -1,3 +1,3 @@
-const run = require("./generate-release-badge");
+import run from "./generate-release-badge.js";
 
 run();

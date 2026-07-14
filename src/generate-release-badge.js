@@ -1,8 +1,9 @@
-const core = require("@actions/core");
-const fs = require("fs");
-const path = require("path");
-const axios = require("axios");
-const { DOMParser } = require("xmldom");
+import * as core from "@actions/core";
+import fs from "fs";
+import path from "path";
+import axios from "axios";
+import { DOMParser } from "xmldom";
+
 const parser = new DOMParser();
 
 async function run() {
@@ -54,4 +55,4 @@ async function downloadBadge(url, filePath) {
   response.data.pipe(fs.createWriteStream(filePath));
 }
 
-module.exports = run;
+export default run;
